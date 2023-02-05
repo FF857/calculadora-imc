@@ -10,24 +10,26 @@ function calcular(){
 
     var resultado_final = resultado.toFixed(1);
 
+    var texto = document.getElementById("resultado");
+
     if(resultado_final < 18.5){
-        document.getElementById("resultado").innerHTML = "Resultado: " + resultado_final + " Classificação: Magreza";
+        texto.innerHTML = "Resultado: " + resultado_final + " Classificação: Magreza";
     }
 
-    if(resultado_final > 18.5 && resultado_final < 24.9) {
-        document.getElementById("resultado").innerHTML = "Resultado: " + resultado_final + " Classificação: Normal";
+    else if(resultado_final > 18.5 && resultado_final < 24.9) {
+        texto.innerHTML = "Resultado: " + resultado_final + " Classificação: Normal";
     }
 
-    if(resultado_final > 25.0 && resultado_final < 29.9) {
-        document.getElementById("resultado").innerHTML = "Resultado: " + resultado_final + " Classificação: Sobrepeso";
+    else if(resultado_final > 25.0 && resultado_final < 29.9) {
+        texto.innerHTML = "Resultado: " + resultado_final + " Classificação: Sobrepeso";
     }
 
-    if(resultado_final > 30.0 && resultado_final < 39.9) {
-        document.getElementById("resultado").innerHTML = "Resultado: " + resultado_final + " Classificação: Obesidade";
+    else if(resultado_final > 30.0 && resultado_final < 39.9) {
+        texto.innerHTML = "Resultado: " + resultado_final + " Classificação: Obesidade";
     }
 
-    if(resultado_final > 40.0) {
-        document.getElementById("resultado").innerHTML = "Resultado: " + resultado_final + " Classificação: Obesidade grave";
+    else { //(resultado_final > 40.0);
+        texto.innerHTML = "Resultado: " + resultado_final + " Classificação: Obesidade grave";
     }
 
 }
