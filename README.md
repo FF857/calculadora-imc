@@ -2,7 +2,7 @@
 
 <p>
     Desafio simples para exercitar os conceitos de JavaScript, CSS e HTML.
-  <img width= "400" src="assets/calculadora IMC.gif">
+  <img width= "400" src="assets/Calculadora IMC.gif">
 </p>
 
 
